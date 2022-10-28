@@ -1,4 +1,5 @@
 import java.io.PrintStream;
+import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 public class Mss {
@@ -19,13 +20,19 @@ public class Mss {
 
 
         try(FileWriter writer = new FileWriter("Log.txt", true))
-        {
+        {   Date date = new Date();
+            writer.append('\n');
             // запись всей строки
+            writer.write(date.toString());
+            writer.append('\n');
             String text = "Name:"+ Project.Chat.getName()+ " Surneme:" +Project.Chat.getSurname() + " Messge:";
             writer.write(text);
             text = messge;
             writer.write(text);
             writer.append('\n');
+
+
+
 
             writer.flush();
         }
