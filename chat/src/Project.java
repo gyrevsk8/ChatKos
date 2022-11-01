@@ -1,9 +1,6 @@
-import java.math.MathContext;
-import java.nio.file.Path;
-import java.util.Arrays;
+
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class Project {
     public  void log () {//тело
@@ -12,8 +9,7 @@ public class Project {
         Mss messege = new Mss();
         Scanner scan = new Scanner(System.in);
 
-        boolean flag = true;
-        while (flag) {
+        while (true) {
             System.out.print("firstname:");
             String firstname = scan.nextLine();
 
@@ -30,14 +26,14 @@ public class Project {
 
             phoneNumber.setPhoneNumber(phone);
             String phoneNew=Phone.checkPhone(phone);
-            if (phoneNew.equals( "-"))
+            if (phoneNew.equals("-"))
             {
                 continue;
             }
 
 
-            System.out.println("Firstname:" + user.firstname);
-            System.out.println("Surname:" + user.surname);
+            System.out.println("Firstname:" + firstname);
+            System.out.println("Surname:" + surname);
             System.out.println("Phone:"+phoneNew);
             messege.show();
 

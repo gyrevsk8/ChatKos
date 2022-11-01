@@ -1,12 +1,12 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Phone {
-    Project p = new Project();
+    //Project p = new Project();
 
     private String phoneNumber;
 
 
-    public String getPhoneNumber() {
+    public String getPhoneNumber() {    //????
 
         return phoneNumber;
     }

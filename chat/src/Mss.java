@@ -1,12 +1,13 @@
-import java.io.PrintStream;
+//import java.io.PrintStream;
 import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 public class Mss {
     public void show()
     {
-        Project p = new Project();
-        Project.Chat ki = new Project.Chat();
+        //Project p = new Project();
+
+       // Project.Chat ki = new Project.Chat();
         Scanner scan = new Scanner(System.in);
         String messge ;
         String name ;
