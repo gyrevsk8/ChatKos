@@ -23,7 +23,10 @@ public class Phone {
                 break;
             }
             else {
+
                 System.out.println("Номер некорректен, повторите попытку");
+                return " 0";
+
             }
         }
         String[] newNumber = phoneNumber.split("");

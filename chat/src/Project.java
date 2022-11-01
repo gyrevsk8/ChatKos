@@ -30,6 +30,11 @@ public class Project {
 
             phoneNumber.setPhoneNumber(phone);
             String phoneNew=Phone.checkPhone(phone);
+            if (phoneNew.equals( " 0"))
+            {
+                continue;
+            }
+
 
             System.out.println("Firstname:" + user.firstname);
             System.out.println("Surname:" + user.surname);

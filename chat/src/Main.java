@@ -3,10 +3,8 @@
 public class Main {
 
     public static void main (String[] args) {
-        System.out.println(" ????? ");
-        Project big = new Project();//cocking dick
+
+        Project big = new Project();
         big.log();
-        // i am the danger Scarletо
-        //nihhher
     }
 }
