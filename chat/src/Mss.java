@@ -13,7 +13,7 @@ public class Mss {
         name = Project.Chat.getName()+ " " +Project.Chat.getSurname() ;
         System.out.print(name);
         System.out.print(" Send:");
-        messge = scan.nextLine();
+        messge = scan.nextLine(); // сюда исключения для сообщений
         System.out.println(messge);
 
 

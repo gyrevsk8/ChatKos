@@ -15,7 +15,7 @@ public class Phone {
     }
 
 
-    static String checkPhone(String phoneNumber) {
+    static String checkPhone(String phoneNumber) {// тут очевидно нужны tey catch!
 
         while(true) {
             phoneNumber = phoneNumber.replaceAll("\\D+", "");
