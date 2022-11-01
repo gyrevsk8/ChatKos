@@ -6,6 +6,7 @@ public class Main {
         System.out.println(" ????? ");
         Project big = new Project();//cocking dick
         big.log();
-        // i am the danger Scarlet
+        // i am the danger Scarletо
+        //nihhher
     }
 }
