@@ -30,7 +30,7 @@ public class Project {
 
             phoneNumber.setPhoneNumber(phone);
             String phoneNew=Phone.checkPhone(phone);
-            if (phoneNew.equals( " 0"))
+            if (phoneNew.equals( "-"))
             {
                 continue;
             }

@@ -25,7 +25,7 @@ public class Phone {
             else {
 
                 System.out.println("Номер некорректен, повторите попытку");
-                return " 0";
+                return "-";
 
             }
         }

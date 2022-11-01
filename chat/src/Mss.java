@@ -8,8 +8,8 @@ public class Mss {
         Project p = new Project();
         Project.Chat ki = new Project.Chat();
         Scanner scan = new Scanner(System.in);
-        String messge = new String();
-        String name = new String();
+        String messge ;
+        String name ;
         name = Project.Chat.getName()+ " " +Project.Chat.getSurname() ;
         System.out.print(name);
         System.out.print(" Send:");
