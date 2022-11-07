@@ -26,7 +26,7 @@ public class Mss {
             // запись всей строки
             writer.write(date.toString());
             writer.append('\n');
-            String text = "Name:"+ Project.Chat.getName()+ " Surneme:" +Project.Chat.getSurname() + " Messge:";
+            String text = "Name:"+ Project.Chat.getName()+'\n' + "Surneme:" +Project.Chat.getSurname() + " Messge:";
             writer.write(text);
             text = messge;
             writer.write(text);
