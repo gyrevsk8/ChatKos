@@ -6,5 +6,6 @@ public class Main {
         //некст пара будет сервер 01.11
         Project big = new Project();
         big.log();
+        //ghjk
     }
 }
