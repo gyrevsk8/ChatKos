@@ -6,8 +6,8 @@ public class Main {
         //некст пара будет сервер 01.11
         // 12 31 323
         //asdfghj
-        Project big = new Project();
-        big.log();
+        Project client = new Project();
+        client.registr();
         //ghjk
     }
 }

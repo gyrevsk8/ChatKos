@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 public class Project {
-    public  void log () {//тело
+    public  void registr() {//тело
         Chat user = new Chat();
         Phone phoneNumber = new Phone();
         Mss messege = new Mss();
@@ -35,7 +35,7 @@ public class Project {
             System.out.println("Firstname:" + firstname);
             System.out.println("Surname:" + surname);
             System.out.println("Phone:"+phoneNew);
-            messege.show();
+            messege.makeLog();
 
             System.out.println("Next? (1/0)");
             int flagStatus = Integer.parseInt(scan.nextLine());
@@ -44,25 +44,7 @@ public class Project {
         }
     }
 
-    public static class Chat {
-        public static String firstname;
-        public static String surname;
 
-
-        public void setName(String firstname) {//геттер пароль
-            this.firstname = firstname;
-        }
-        public void setSurname(String surname){//сеттер пароль
-            this.surname=surname;
-        }
-        public static String getName(){//геттер пароль
-            return firstname;
-        }
-        public static String getSurname() {//геттер логина
-            return surname;
-        }
-
-    }
 
 
 

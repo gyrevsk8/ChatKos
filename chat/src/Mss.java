@@ -3,15 +3,14 @@ import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 public class Mss {
-    public void show()
+    public void makeLog() //логи
     {
-        //Project p = new Project();
 
-       // Project.Chat ki = new Project.Chat();
         Scanner scan = new Scanner(System.in);
         String messge ;
         String name ;
-        name = Project.Chat.getName()+ " " +Project.Chat.getSurname() ;
+        Chat ch = new Chat();
+        name = ch.getName()+ " " +ch.getSurname() ;
         System.out.print(name);
         System.out.print(" Send:");
         messge = scan.nextLine(); // сюда исключения для сообщений
@@ -26,7 +25,7 @@ public class Mss {
             // запись всей строки
             writer.write(date.toString());
             writer.append('\n');
-            String text = "Name:"+ Project.Chat.getName()+'\n' + "Surneme:" +Project.Chat.getSurname() + " Messge:";
+            String text = "Name:"+ ch.getName()+'\n' + "Surneme:" +'\n'+ ch.getSurname() + " Messge:";
             writer.write(text);
             text = messge;
             writer.write(text);
