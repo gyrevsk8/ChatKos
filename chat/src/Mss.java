@@ -5,7 +5,7 @@ import java.io.*;
 public class Mss {
     public void makeLog() //логи
     {
-
+        PGP pgp = new PGP();
         Scanner scan = new Scanner(System.in);
         String messge ;
         String name ;
