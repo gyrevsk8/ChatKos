@@ -16,8 +16,15 @@ public class Phone {
      this.phoneNumber=phoneNumber;
     }
 
+    /**
+     * проверяет телефон на правильность ввода путём проверки длины. Изменяет строку телефона в формате
+     * 7(***)***-**-**
+     * @param phoneNumber
+     * @return phoneNumber
+     * @throws NumberException
+     */
+    static String checkPhone(String phoneNumber) throws NumberException {// тут очевидно нужны tey catch!//закрыто
 
-    static String checkPhone(String phoneNumber) throws NumberException {// тут очевидно нужны tey catch!
         try
         {
             phoneNumber = phoneNumber.replaceAll("\\D+", "");

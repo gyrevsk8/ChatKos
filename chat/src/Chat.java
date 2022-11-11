@@ -1,4 +1,4 @@
-public class Chat {
+public class Chat { 
     public static String firstname;
     public static String surname;
 
@@ -13,6 +13,7 @@ public class Chat {
         return firstname;
     }
     public String getSurname() {//геттер логина
+
         return surname;
     }
 

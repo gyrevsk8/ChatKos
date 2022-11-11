@@ -57,11 +57,9 @@ public String nameIns()
             name = scan.nextLine();
             if (name == "") {
                 System.out.println("Введите имя! :");
-                continue;
             }
             else {
                 break;
-
             }
         }
         return name;
@@ -77,10 +75,8 @@ public String nameIns()
             sname = scan.nextLine();
             if (sname == "") {
                 System.out.println("Введите фамилию! :");
-                continue;
             } else {
                 break;
-
             }
         }
         return sname;
