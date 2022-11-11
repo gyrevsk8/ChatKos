@@ -3,6 +3,7 @@ import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 public class Mss {
+    String phn = "";
     public void makeLog() //логи
     {
         PGP pgp = new PGP();
@@ -11,6 +12,7 @@ public class Mss {
         String name ;
         Chat ch = new Chat();
         name = ch.getName()+ " " +ch.getSurname() ;
+
         System.out.print(name);
         System.out.print(" Send:");
         messge = scan.nextLine(); // сюда исключения для сообщений
@@ -26,7 +28,7 @@ public class Mss {
             // запись всей строки
             writer.write(date.toString());
             writer.append('\n');
-            String text = "Name:"+ ch.getName()+'\n' + "Surneme:" +'\n'+ ch.getSurname() + " Messge:";
+            String text = "Name:"+ ch.getName()+'\n' + "Surneme:" + ch.getSurname()+'\n'+phn+'\n' + " Messge:";
             writer.write(text);
             text = messge;
             writer.write(text);
