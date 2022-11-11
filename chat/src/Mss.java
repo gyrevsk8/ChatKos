@@ -19,8 +19,9 @@ public class Mss {
 
 
 
-        try(FileWriter writer = new FileWriter("Log.txt", true))
-        {   Date date = new Date();
+        try (FileWriter writer = new FileWriter("Log.txt", true))
+        {
+            Date date = new Date();
             writer.append('\n');
             // запись всей строки
             writer.write(date.toString());
