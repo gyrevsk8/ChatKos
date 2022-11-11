@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 public class Project {
-    public  void registr() {//тело
+    public  void registr() throws NumberException {//тело
         Chat user = new Chat();
         Phone phoneNumber = new Phone();
         Mss messege = new Mss();
@@ -24,9 +24,9 @@ public class Project {
 
             user.setName(firstname);
             user.setSurname(surname);
-
             phoneNumber.setPhoneNumber(phone);
             String phoneNew=Phone.checkPhone(phone);
+
             if (phoneNew.equals("-"))
             {
                 continue;
@@ -35,6 +35,7 @@ public class Project {
 
             System.out.println("Firstname:" + firstname);
             System.out.println("Surname:" + surname);
+            messege.phn = phoneNew;
             System.out.println("Phone:"+phoneNew);
             messege.makeLog();
 
@@ -43,6 +44,10 @@ public class Project {
             if (flagStatus==0)
                 break;
         }
+    }
+    public void setNumber()
+    {
+
     }
 
 
