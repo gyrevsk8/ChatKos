@@ -4,26 +4,29 @@ import java.util.Scanner;
 
 
 public class Project {
+
+
+    Scanner scan = new Scanner(System.in);
     public  void registr() throws NumberException {//тело
         Chat user = new Chat();
         Phone phoneNumber = new Phone();
         Mss messege = new Mss();
-        Scanner scan = new Scanner(System.in);
+
 
         while (true) {
             System.out.print("firstname:");
-            String firstname = scan.nextLine();
+            String firstname = "";
+            firstname = nameIns();
+            user.setName(firstname);
 
             System.out.print("\nsecondname:");
-            String surname = scan.nextLine();
+            String surname = "";
+            surname = snameIns();
+            user.setSurname(surname);
 
             System.out.print("\nphone:");
             String phone = scan.nextLine();
-
             System.out.println(phone);
-
-            user.setName(firstname);
-            user.setSurname(surname);
             phoneNumber.setPhoneNumber(phone);
             String phoneNew=Phone.checkPhone(phone);
 
@@ -45,13 +48,56 @@ public class Project {
                 break;
         }
     }
-    public void setNumber()
+
+public String nameIns()
+{
+    String name = "";
+
+        while (true) {
+            name = scan.nextLine();
+            if (name == "") {
+                System.out.println("Введите имя! :");
+                continue;
+            }
+            else {
+                break;
+
+            }
+        }
+        return name;
+
+
+
+}
+    public String snameIns()
     {
+        String sname = "";
+
+        while (true) {
+            sname = scan.nextLine();
+            if (sname == "") {
+                System.out.println("Введите фамилию! :");
+                continue;
+            } else {
+                break;
+
+            }
+        }
+        return sname;
+
+
 
     }
 
 
 
+}
 
+class NameException   extends Exception{
+    public NameException()
+    {
+
+
+    }
 
 }
