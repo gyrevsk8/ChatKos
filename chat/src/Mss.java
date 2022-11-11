@@ -8,15 +8,21 @@ public class Mss {
     {
         PGP pgp = new PGP();
         Scanner scan = new Scanner(System.in);
-        String messge ;
+        String messge = null;
         String name ;
         Chat ch = new Chat();
         name = ch.getName()+ " " +ch.getSurname() ;
 
         System.out.print(name);
         System.out.print(" Send:");
-        messge = scan.nextLine(); // сюда исключения для сообщений
-        System.out.println(messge);
+        try{
+            messge = scan.nextLine();// сюда исключения для сообщений
+            String encryptedMessage = pgp.encrypt(messge);
+            System.out.println(messge);
+            System.out.println(encryptedMessage);
+
+        }catch (Exception ignored){}
+
 
 
 
