@@ -8,8 +8,10 @@ public class Project {
 
     Scanner scan = new Scanner(System.in);
     public  void registr() throws NumberException {//тело
-        Chat user = new Chat();
-        Phone phoneNumber = new Phone();
+        Chat user;
+        user = new Chat();
+        Phone phoneNumber;
+        phoneNumber = new Phone();
         Mss messege = new Mss();
 
 
@@ -55,7 +57,7 @@ public String nameIns()
 
         while (true) {
             name = scan.nextLine();
-            if (name == "") {
+            if (name.equals("")) {
                 System.out.println("Введите имя! :");
             }
             else {

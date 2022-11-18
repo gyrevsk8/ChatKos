@@ -1,4 +1,7 @@
-public class Chat { 
+/**
+ * Класс отвечает за сеттинг и геттинг переменных не нуждающихся в проверке
+ */
+public class Chat {
     public static String firstname;
     public static String surname;
 

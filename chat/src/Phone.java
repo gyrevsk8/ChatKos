@@ -2,16 +2,32 @@
 
 import java.util.Scanner;
 
+/**
+ * Специальный класс для работы с номером телефона
+ * поддреживает один три метода:
+ * @method getPhoneNumber
+ * @method setPhoneNumber
+ * @method checkPhone
+ *
+ */
 public class Phone {
     //Project p = new Project();
 
     private String phoneNumber;
 
-
+    /**
+     * геттер для телефонного номера
+     * @return string *phoneNumber*
+     */
     public String getPhoneNumber() {    //????
 
         return phoneNumber;
     }
+
+    /**
+     * сеттер для телефонного номера
+     * @param phoneNumber
+     */
     public void setPhoneNumber(String phoneNumber){
      this.phoneNumber=phoneNumber;
     }
@@ -53,6 +69,10 @@ public class Phone {
     }
 
     }
+
+/**
+ * Класс исключения для проверки телефона
+ */
 class NumberException extends Exception{
 
     private String mss = "Sad number";
