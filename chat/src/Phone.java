@@ -61,7 +61,7 @@ public class Phone {
             System.out.print("\nphone:");
             String phone = scan.nextLine();
             String phoneNew=Phone.checkPhone(phone);
-            return phoneNumber;
+            return phoneNew;
 
         }
 
