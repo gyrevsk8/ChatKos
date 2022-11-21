@@ -60,7 +60,8 @@ public class Phone {
             Scanner scan = new Scanner(System.in);
             System.out.print("\nphone:");
             String phone = scan.nextLine();
-            String phoneNew=Phone.checkPhone(phone);
+            String phoneNew;
+            phoneNew = Phone.checkPhone(phone);
             return phoneNew;
 
         }
