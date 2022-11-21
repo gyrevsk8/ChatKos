@@ -1,22 +1,22 @@
 import javax.crypto.Cipher;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.PrivateKey;
-import java.security.PublicKey;
+import java.security.*;
 import java.util.Base64;
 
 public class PGP {
 private PublicKey publicKey;
 private PrivateKey privateKey;
 
-public PGP(){
+public PGP() throws NoSuchAlgorithmException {
+
     try {
-        KeyPairGenerator generator = KeyPairGenerator.getInstance("PGP");
+        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         generator.initialize(1024);
         KeyPair pair = generator.generateKeyPair();
         privateKey = pair.getPrivate();
         publicKey = pair.getPublic();
-    } catch (Exception ignored) {}
+    } catch (Exception ignored) {
+    }
+
 }
 
     private String encodeToByte(byte[] data) {
